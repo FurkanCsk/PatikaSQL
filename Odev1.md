@@ -1,6 +1,7 @@
 `1. SORU film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız. `
-
-SELECT title, description FROM film
+```SQL
+SELECT title, description FROM film;
+```
 
 
 -- SELECT * FROM film WHERE length > 60 AND  length < 75;
