@@ -34,13 +34,10 @@ AND replacement_cost = ALL
 
 `SORU 4: payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.`
 ```SQL
-SELECT customer_id, total_payments
-FROM
-(
-	SELECT customer_id, COUNT(*) AS total_payments
-	FROM payment
-	GROUP BY customer_id
-)
-ORDER BY total_payments DESC
+SELECT SUM(amount), customer.first_name, customer.last_name
+FROM payment
+JOIN customer ON customer.customer_id = payment.customer_id
+GROUP BY payment.customer_id, customer.first_name, customer.last_name
+ORDER BY SUM(amount) DESC
 LIMIT 5;
 ```
