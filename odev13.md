@@ -1,3 +1,3 @@
-soru1 : dfkjdfkjsdafkfds
+`soru1 : dfkjdfkjsdafkfds`
 
 sql
