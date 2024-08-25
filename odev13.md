@@ -1,3 +1,4 @@
 `soru1 : dfkjdfkjsdafkfds`
-
-sql
+```SQL
+SELECT * FROM city
+```
